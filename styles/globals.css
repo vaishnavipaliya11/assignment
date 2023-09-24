@@ -1,26 +1,18 @@
-html,
+/* styles.css */
+/* styles.module.css */
+:root {
+  --primary-clr: #79589f;
+  --secondary: #79589fd9;
+
+  --secondary-clr: hsl(193, 21%, 92%);
+  --brown-clr: #9e1327;
+  --gray-clr: #94a3b8;
+  --green-clr: #047857;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+  margin: 0;
+  padding: 0;
+  /* Your body styles here */
 }
