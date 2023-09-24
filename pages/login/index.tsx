@@ -2,7 +2,7 @@ import React from "react";
 import { loginForm } from "../../constants";
 import { generateClassName } from "../../utils/generateClassName";
 import styles from "../../styles/Navbar.module.css";
-
+import { signIn } from "next-auth/react";
 const Login = () => {
   return (
     <div
@@ -23,7 +23,8 @@ const Login = () => {
             </label>
           );
         })}
-        <button className={generateClassName(styles, " btn-primary")}>Login</button>
+        <button onClick={() => signIn("google")}
+         className={generateClassName(styles, " btn-primary")}>Login</button>
       </div>
     </div>
   );
