@@ -30,17 +30,8 @@ export const authSlice = createSlice({
   },
 
   extraReducers: (builder) => {
-    builder;
-    // .addCase(getAllPosts.pending, (state) => {
-    //   state.loading = true;
-    // })
-    // .addCase(getAllPosts.fulfilled, (state, { payload }) => {
-    //   // state.allPosts = payload?.posts;
-    //   state.loading = false;
-    // })
-    // .addCase(getAllPosts.rejected, (state) => {
-    //   state.loading = false;
-    // });
+    
+    
   },
 });
 export const { setAuth ,setLoggedOut} = authSlice.actions;
