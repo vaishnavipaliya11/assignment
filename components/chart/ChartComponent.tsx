@@ -16,9 +16,8 @@ const ChartComponent = ({ data }: any) => {
       const ctx = chartRef.current.getContext("2d");
       if (ctx) {
         chartInstance.current = new Chart(ctx, {
-          type: 'bar', // Choose the chart type (e.g., 'bar', 'line', 'pie')
+          type: "bar",
           data: data,
-          
         });
       }
     }
@@ -31,7 +30,7 @@ const ChartComponent = ({ data }: any) => {
     };
   }, [data]);
 
-  return <canvas style={{ width: "2rem" }} ref={chartRef}></canvas>;
+  return <canvas ref={chartRef}></canvas>;
 };
 
 export default ChartComponent;

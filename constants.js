@@ -14,8 +14,8 @@ export const chartData = {
   datasets: [{
       label: 'Monthly Sales',
       data: [12, 19, 3, 5, 2,12, 19, 3, 5, 2],
-      backgroundColor: 'rgba(75, 192, 192, 0.2)',
-      borderColor: 'rgba(75, 192, 192, 1)',
+      backgroundColor: '#93c5fd',
+      borderColor: '#1e3a8a',
       borderWidth: 1,
   }],
 };

@@ -3,8 +3,10 @@ import { crousalImages } from "../../constants";
 import { useEffect, useState } from "react";
 import { generateClassName } from "../../utils/generateClassName";
 import styles from "../../styles/Navbar.module.css";
+import { useAppSelector } from "../../app/hooks";
 
 const Crousal = () => {
+  const {crousalImg}= useAppSelector(store => store.dashboard)
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -18,7 +20,7 @@ const Crousal = () => {
   return (
     <div className={generateClassName(styles, "carousel img-max-width")}>
       <img
-       src={crousalImages[currentIndex]}
+       src={crousalImg[currentIndex]}
         alt={`Image ${currentIndex + 1}`}
       />
     </div>

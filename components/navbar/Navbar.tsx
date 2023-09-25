@@ -4,8 +4,10 @@ import { AiOutlineLogout } from "react-icons/ai";
 import { generateClassName } from "../../utils/generateClassName";
 import { signOut } from "next-auth/react";
 import { useRouter } from "next/router";
+import { useAppDispatch } from "../../app/hooks";
+import { setLoggedOut } from "../../features/auth/authSlice";
 const Navbar = () => {
-  const router = useRouter();
+  const dispatch = useAppDispatch();
   return (
     <div
       className={generateClassName(
@@ -13,15 +15,15 @@ const Navbar = () => {
         "commonFlex jst-sp-bet navContainer"
       )}
     >
-      Navbar
-      <button
+      
+      {/* <button
         onClick={() => {
-          signOut();
-          router.push("/login")
+          // router.push("/login");
+          dispatch(setLoggedOut());
         }}
       >
         <AiOutlineLogout />
-      </button>
+      </button> */}
     </div>
   );
 };
