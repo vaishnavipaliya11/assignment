@@ -105,20 +105,7 @@
   font-size: 1rem;
   font-weight: revert;
 }
-.fs-med {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-.fs-bg {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.fs-xbg {
-  font-size: 1.5rem;
-}
-.fm-cur {
-  font-family: cursive;
-}
+
 .a-start {
   align-items: flex-start;
 }
@@ -177,23 +164,9 @@
   background-color: #f1f5f9;
 }
 
-.horizontal-line {
-  position: relative;
-  width: 100%;
-  height: 1px; /* Set the height of the horizontal line */
-  background-color: var(--gray-clr); /* Set the color of the line */
-  margin: 10px 0; /* Adjust margin as needed */
-}
 
-.horizontal-line::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1px; /* Set the height of the pseudo-element to match the line */
-  background-color: var(--gray-clr); /* Set the color of the pseudo-element */
-}
+
+
 .navContainer {
   padding: 1.2rem 0;
   align-items: center;

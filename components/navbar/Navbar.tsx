@@ -15,7 +15,7 @@ const Navbar = () => {
         "commonFlex jst-sp-bet navContainer"
       )}
     >
-      
+      Iskon 
       {/* <button
         onClick={() => {
           // router.push("/login");

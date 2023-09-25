@@ -1,18 +1,17 @@
 /* styles.css */
 /* styles.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
 :root {
   --primary-clr: #172554;
-  --secondary: #79589fd9;
-
-  --secondary-clr: hsl(193, 21%, 92%);
-  --brown-clr: #9e1327;
-  --gray-clr: #94a3b8;
-  --green-clr: #047857;
+  --secondary: #3730a3;
 }
 
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Comic Neue', cursive;
+font-family: 'Roboto', sans-serif;
   /* Your body styles here */
 }
