@@ -4,8 +4,8 @@ const nextConfig = {
   swcMinify: true,
 
   env:{
-    GOOGLE_CLIENT_ID:'907500517100-2nfpv7qsn1an6fcarodrr52ahtab12ac.apps.googleusercontent.com',
-    GOOGLE_CLIENT_SECRET:'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'
+    GOOGLE_CLIENT_ID:'219643582394-egd8tv3quv06el5h7oqbabctimjs5rn4.apps.googleusercontent.com',
+    GOOGLE_CLIENT_SECRET:'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'
   }
 }
 

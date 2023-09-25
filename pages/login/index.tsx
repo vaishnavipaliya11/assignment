@@ -2,8 +2,11 @@ import React from "react";
 import { loginForm } from "../../constants";
 import { generateClassName } from "../../utils/generateClassName";
 import styles from "../../styles/Navbar.module.css";
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 const Login = () => {
+  const  {data}= useSession()
+  console.log(data,"data");
+  
   return (
     <div
       className={generateClassName(
@@ -11,20 +14,32 @@ const Login = () => {
         "login-container commonFlex a-center j-center "
       )}
     >
-      <div className={generateClassName(styles, " commonCol gap-xs box-shadow-one  pd-med  border-radius-min")}>
+      <div
+        className={generateClassName(
+          styles,
+          " commonCol gap-xs box-shadow-one  pd-med  border-radius-min"
+        )}
+      >
         {loginForm.map((item) => {
           return (
             <label
               key={item.labelText}
-              className={generateClassName(styles, " commonCol  j-center gap-xxs")}
+              className={generateClassName(
+                styles,
+                " commonCol  j-center gap-xxs"
+              )}
             >
               {item.labelText}
               <input type={item.type} />
             </label>
           );
         })}
-        <button onClick={() => signIn("google")}
-         className={generateClassName(styles, " btn-primary")}>Login</button>
+        <button
+          onClick={() => signIn("google")}
+          className={generateClassName(styles, "btn-primary")}
+        >
+          Login
+        </button>
       </div>
     </div>
   );
